@@ -6,6 +6,17 @@ if (nav) {
   onScroll();
 }
 
+// Flip cards produit
+document.querySelectorAll('.card').forEach(card => {
+  const flip = () => {
+    const flipped = card.classList.toggle('is-flipped');
+    card.setAttribute('aria-pressed', flipped);
+    card.querySelector('.card__back').setAttribute('aria-hidden', !flipped);
+  };
+  card.addEventListener('click', flip);
+  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
+});
+
 // Menu burger mobile
 const burger = document.querySelector('.nav__burger');
 const navLinks = document.querySelector('.nav__links');
