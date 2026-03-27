@@ -1,3 +1,11 @@
+// Nav sticky — fond au scroll
+const nav = document.querySelector('.nav');
+if (nav) {
+  const onScroll = () => nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
 // Menu burger mobile
 const burger = document.querySelector('.nav__burger');
 const navLinks = document.querySelector('.nav__links');
