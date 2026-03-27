@@ -221,7 +221,9 @@ address { font-style: normal; }
   position: relative;
   z-index: 2;
   max-width: 700px;
-  padding-inline: 1.5rem;
+  padding: 2.5rem clamp(1.5rem, 4vw, 3rem);
+  background: rgba(30, 21, 16, 0.50);
+  border-radius: 40px;
 }
 
 .hero__title {
@@ -236,8 +238,17 @@ address { font-style: normal; }
 .hero__tagline {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: rgba(245, 239, 230, 0.85);
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.75rem;
   font-weight: 400;
+}
+
+.hero__description {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: rgba(245, 239, 230, 0.90);
+  margin-bottom: 2.5rem;
+  max-width: 520px;
+  margin-inline: auto;
+  line-height: 1.7;
 }
 
 .hero__actions {

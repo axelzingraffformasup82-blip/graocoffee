@@ -70,6 +70,10 @@
   }
   </script>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -82,7 +86,7 @@
   <!-- ═══════════════════════════════════════
        HERO
   ═══════════════════════════════════════ -->
-  <header class="hero" role="banner">
+  <header role="banner">
     <nav class="nav" aria-label="Navigation principale">
       <a href="#" class="nav__logo" aria-label="Grão, retour à l'accueil">Grão</a>
       <ul class="nav__links" role="list">
@@ -95,18 +99,24 @@
         <span></span><span></span><span></span>
       </button>
     </nav>
-
-    <div class="hero__content">
-      <h1 class="hero__title">Le café,<br>à la source.</h1>
-      <p class="hero__tagline">Grains sélectionnés à la main, torréfiés à Lyon.</p>
-      <div class="hero__actions">
-        <a href="#carte" class="btn btn--primary">Découvrir la carte</a>
-        <a href="#histoire" class="btn btn--ghost">Notre histoire</a>
-      </div>
-    </div>
   </header>
 
   <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">Le café,<br>à la source.</h1>
+        <p class="hero__tagline">Grains sélectionnés à la main, torréfiés à Lyon.</p>
+        <p class="hero__description">Grão est un café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sourcés directement auprès des producteurs, torréfiés sur place chaque semaine.</p>
+        <div class="hero__actions">
+          <a href="#carte" class="btn btn--primary">Découvrir la carte</a>
+          <a href="#histoire" class="btn btn--ghost">Notre histoire</a>
+        </div>
+      </div>
+    </section>
 
     <!-- ═══════════════════════════════════════
          SECTION 2 — CARTE / OFFRE
