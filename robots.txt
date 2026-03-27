@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /mentions-legales.html
+Disallow: /cgv.html
+Disallow: /cgu.html
+
+Sitemap: https://grao-coffee.netlify.app/sitemap.xml
