@@ -8,7 +8,7 @@
       name="description"
       content="Grão est un café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sélectionnés à la main, torréfiés sur place."
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="author" content="Grão Coffee Shop" />
     <meta
       name="keywords"
@@ -22,7 +22,7 @@
     <meta property="og:title" content="Grão — Café de spécialité à Lyon" />
     <meta
       property="og:description"
-      content="Grains sélectionnés à la main, torréfiés à Lyon. Venez découvrir notre café de spécialité à la Croix-Rousse."
+      content="Grão est un café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sélectionnés à la main, torréfiés sur place."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://grao-coffee.netlify.app/" />
@@ -42,7 +42,7 @@
     <meta name="twitter:title" content="Grão — Café de spécialité à Lyon" />
     <meta
       name="twitter:description"
-      content="Grains sélectionnés à la main, torréfiés à Lyon. Venez découvrir notre café de spécialité à la Croix-Rousse."
+      content="Grão est un café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sélectionnés à la main, torréfiés sur place."
     />
     <meta
       name="twitter:image"
@@ -90,10 +90,27 @@
             "closes": "17:00"
           }
         ],
+        "telephone": "+33-4-XX-XX-XX-XX",
         "email": "bonjour@grao-coffee.fr",
         "servesCuisine": "Café de spécialité",
         "priceRange": "€",
-        "sameAs": []
+        "menu": "https://grao-coffee.netlify.app/#carte",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grao-coffee.netlify.app/assets/images/favicon.png"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "sameAs": [
+          "https://www.instagram.com/graocoffee",
+          "https://www.facebook.com/graocoffee",
+          "https://www.tiktok.com/@graocoffee"
+        ]
       }
     </script>
 
@@ -109,7 +126,9 @@
       rel="stylesheet"
     />
 
+    <link rel="preload" href="style.css" as="style" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   </head>
   <body>
     <!-- ═══════════════════════════════════════
@@ -142,6 +161,7 @@
          HERO
     ═══════════════════════════════════════ -->
       <section class="hero" aria-labelledby="hero-title">
+        <img src="assets/images/hero.png" alt="Café Grão — coffee shop de spécialité à Lyon Croix-Rousse, ambiance chaleureuse et torréfaction artisanale" class="hero__bg" fetchpriority="high" />
         <div class="hero__content">
           <h1 class="hero__title" id="hero-title">
             Le café,<br />à la source.
@@ -617,6 +637,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
