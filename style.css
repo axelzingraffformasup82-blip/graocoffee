@@ -140,18 +140,23 @@ address { font-style: normal; }
   transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
 }
 
-.nav--scrolled {
+.nav--scrolled,
+.nav--static {
   background: #f5efe6;
   box-shadow: 0 2px 16px rgba(30, 21, 16, 0.08);
   padding-block: 1rem;
 }
 
 .nav--scrolled .nav__logo,
-.nav--scrolled .nav__links a {
+.nav--scrolled .nav__links a,
+.nav--static .nav__logo,
+.nav--static .nav__links a {
   color: var(--color-primary);
 }
-.nav--scrolled .nav__links a:hover { color: var(--color-cta); }
-.nav--scrolled .nav__burger span { background: var(--color-primary); }
+.nav--scrolled .nav__links a:hover,
+.nav--static .nav__links a:hover { color: var(--color-cta); }
+.nav--scrolled .nav__burger span,
+.nav--static .nav__burger span { background: var(--color-primary); }
 
 .nav__logo {
   font-family: var(--font-serif);

@@ -1,7 +1,10 @@
 // Nav sticky — fond au scroll
 const nav = document.querySelector('.nav');
 if (nav) {
-  const onScroll = () => nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+  const onScroll = () => {
+    if (nav.classList.contains('nav--static')) return;
+    nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 }
