@@ -1,400 +1,647 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grão — Café de spécialité à Lyon</title>
-  <meta name="description" content="Grão est un café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sélectionnés à la main, torréfiés sur place." />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Grão Coffee Shop" />
-  <meta name="keywords" content="café de spécialité Lyon, coffee shop Croix-Rousse, torréfaction artisanale Lyon, café filtre Lyon, espresso Lyon" />
-  <meta name="geo.region" content="FR-ARA" />
-  <meta name="geo.placename" content="Lyon, Croix-Rousse" />
-  <link rel="canonical" href="https://grao-coffee.netlify.app/" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grão — Café de spécialité à Lyon</title>
+    <meta
+      name="description"
+      content="Grão est un café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sélectionnés à la main, torréfiés sur place."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Grão Coffee Shop" />
+    <meta
+      name="keywords"
+      content="café de spécialité Lyon, coffee shop Croix-Rousse, torréfaction artisanale Lyon, café filtre Lyon, espresso Lyon"
+    />
+    <meta name="geo.region" content="FR-ARA" />
+    <meta name="geo.placename" content="Lyon, Croix-Rousse" />
+    <link rel="canonical" href="https://grao-coffee.netlify.app/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Grão — Café de spécialité à Lyon" />
-  <meta property="og:description" content="Grains sélectionnés à la main, torréfiés à Lyon. Venez découvrir notre café de spécialité à la Croix-Rousse." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://grao-coffee.netlify.app/" />
-  <meta property="og:image" content="https://grao-coffee.netlify.app/assets/images/ambiance.png" />
-  <meta property="og:image:alt" content="Intérieur du café Grão, Croix-Rousse Lyon" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:site_name" content="Grão Coffee Shop" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Grão — Café de spécialité à Lyon" />
+    <meta
+      property="og:description"
+      content="Grains sélectionnés à la main, torréfiés à Lyon. Venez découvrir notre café de spécialité à la Croix-Rousse."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grao-coffee.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://grao-coffee.netlify.app/assets/images/ambiance.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Intérieur du café Grão, Croix-Rousse Lyon"
+    />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Grão Coffee Shop" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Grão — Café de spécialité à Lyon" />
-  <meta name="twitter:description" content="Grains sélectionnés à la main, torréfiés à Lyon. Venez découvrir notre café de spécialité à la Croix-Rousse." />
-  <meta name="twitter:image" content="https://grao-coffee.netlify.app/assets/images/ambiance.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Grão — Café de spécialité à Lyon" />
+    <meta
+      name="twitter:description"
+      content="Grains sélectionnés à la main, torréfiés à Lyon. Venez découvrir notre café de spécialité à la Croix-Rousse."
+    />
+    <meta
+      name="twitter:image"
+      content="https://grao-coffee.netlify.app/assets/images/ambiance.png"
+    />
 
-  <!-- JSON-LD : LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CafeOrCoffeeShop",
-    "name": "Grão Coffee Shop",
-    "description": "Café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sélectionnés à la main, torréfiés sur place.",
-    "url": "https://grao-coffee.netlify.app/",
-    "image": "https://grao-coffee.netlify.app/assets/images/ambiance.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "12 rue Terme",
-      "addressLocality": "Lyon",
-      "postalCode": "69001",
-      "addressCountry": "FR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.7676,
-      "longitude": 4.8320
-    },
-    "openingHoursSpecification": [
+    <!-- JSON-LD : LocalBusiness -->
+    <script type="application/ld+json">
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "07:30",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday","Sunday"],
-        "opens": "08:30",
-        "closes": "17:00"
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Grão Coffee Shop",
+        "description": "Café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sélectionnés à la main, torréfiés sur place.",
+        "url": "https://grao-coffee.netlify.app/",
+        "image": "https://grao-coffee.netlify.app/assets/images/ambiance.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12 rue Terme",
+          "addressLocality": "Lyon",
+          "postalCode": "69001",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.7676,
+          "longitude": 4.832
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "07:30",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "08:30",
+            "closes": "17:00"
+          }
+        ],
+        "email": "bonjour@grao-coffee.fr",
+        "servesCuisine": "Café de spécialité",
+        "priceRange": "€",
+        "sameAs": []
       }
-    ],
-    "email": "bonjour@grao-coffee.fr",
-    "servesCuisine": "Café de spécialité",
-    "priceRange": "€",
-    "sameAs": []
-  }
-  </script>
+    </script>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- ═══════════════════════════════════════
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════
        HERO
   ═══════════════════════════════════════ -->
-  <header role="banner">
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#" class="nav__logo" aria-label="Grão, retour à l'accueil">Grão</a>
-      <ul class="nav__links" role="list">
-        <li><a href="#carte">La carte</a></li>
-        <li><a href="#histoire">Notre histoire</a></li>
-        <li><a href="#avis">Avis</a></li>
-        <li><a href="#visiter" class="nav__cta">Réserver</a></li>
-      </ul>
-      <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- ═══════════════════════════════════════
-         HERO
-    ═══════════════════════════════════════ -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__content">
-        <h1 class="hero__title" id="hero-title">Le café,<br>à la source.</h1>
-        <p class="hero__tagline">Grains sélectionnés à la main, torréfiés à Lyon.</p>
-        <p class="hero__description">Grão est un café de spécialité indépendant situé dans le quartier de la Croix-Rousse à Lyon. Grains sourcés directement auprès des producteurs, torréfiés sur place chaque semaine.</p>
-        <div class="hero__actions">
-          <a href="#carte" class="btn btn--primary">Découvrir la carte</a>
-          <a href="#histoire" class="btn btn--ghost">Notre histoire</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         SECTION 2 — CARTE / OFFRE
-    ═══════════════════════════════════════ -->
-    <section class="offre" id="carte" aria-labelledby="offre-title">
-      <div class="container">
-        <h2 class="section-title" id="offre-title">Ce qu'on vous prépare</h2>
-        <p class="section-subtitle">Des recettes pensées autour de la qualité du grain.</p>
-
-        <div class="cards-grid">
-
-          <article class="card" aria-label="Espresso et déclinaisons" tabindex="0" role="button" aria-pressed="false">
-            <div class="card__inner">
-              <div class="card__front">
-                <div class="card__img-wrap">
-                  <img src="assets/images/card-espresso.png" alt="Tasse d'espresso Grão" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3 class="card__title">Espresso &amp; Déclinaisons</h3>
-                  <p class="card__desc">Notre espresso signature issu d'un blend éthiopien-brésilien. Servi court, allongé ou en latte onctueux.</p>
-                  <span class="card__price">À partir de 2,50 €</span>
-                </div>
-              </div>
-              <div class="card__back" aria-hidden="true">
-                <h3 class="card__back-title">Espresso &amp; Déclinaisons</h3>
-                <p>Notre blend marie des arabicas d'Éthiopie (notes florales, agrumes) et du Brésil (corps rond, chocolaté). Déclinable en macchiato, cortado, flat white ou latte — chaque préparation révèle une facette du grain.</p>
-                <p>Préparé sur machine La Marzocco par nos baristas formés à la torréfaction.</p>
-                <span class="card__price">À partir de 2,50 €</span>
-              </div>
-            </div>
-            <span class="card__hint" aria-hidden="true">Cliquer pour en savoir plus</span>
-          </article>
-
-          <article class="card" aria-label="Cafés filtre et origines" tabindex="0" role="button" aria-pressed="false">
-            <div class="card__inner">
-              <div class="card__front">
-                <div class="card__img-wrap">
-                  <img src="assets/images/card-flatwhite.png" alt="Flat white avec latte art" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3 class="card__title">Cafés filtre &amp; Origins</h3>
-                  <p class="card__desc">Chaque semaine, une origine différente mise en avant. V60, Chemex ou Aeropress — le grain s'exprime pleinement.</p>
-                  <span class="card__price">À partir de 3,50 €</span>
-                </div>
-              </div>
-              <div class="card__back" aria-hidden="true">
-                <h3 class="card__back-title">Cafés filtre &amp; Origins</h3>
-                <p>Chaque lundi, une nouvelle origine prend sa place sur notre bar : Kenya, Colombie, Yirgacheffe, Sidama... Choisissez votre méthode — V60 pour la clarté, Chemex pour la délicatesse, Aeropress pour l'intensité.</p>
-                <p>Un café filtre, c'est le grain dans toute sa vérité. Sourcé, traçé, raconté.</p>
-                <span class="card__price">À partir de 3,50 €</span>
-              </div>
-            </div>
-            <span class="card__hint" aria-hidden="true">Cliquer pour en savoir plus</span>
-          </article>
-
-          <article class="card" aria-label="Formules et accompagnements" tabindex="0" role="button" aria-pressed="false">
-            <div class="card__inner">
-              <div class="card__front">
-                <div class="card__img-wrap">
-                  <img src="assets/images/card-coldbrew.png" alt="Cold brew en verre" loading="lazy" />
-                </div>
-                <div class="card__body">
-                  <h3 class="card__title">Formules &amp; Accompagnements</h3>
-                  <p class="card__desc">Café + viennoiserie maison ou café + plat du jour. Nos formules sont renouvelées chaque matin selon l'arrivage.</p>
-                  <span class="card__price">À partir de 7,90 €</span>
-                </div>
-              </div>
-              <div class="card__back" aria-hidden="true">
-                <h3 class="card__back-title">Formules &amp; Accompagnements</h3>
-                <p>Le matin : croissant au beurre, pain au chocolat ou tartine de saison. Le midi : plat chaud du jour + café au choix. Tout est préparé en cuisine sur place, sans compromis sur la qualité.</p>
-                <p>Les formules changent chaque matin selon l'arrivage — venez découvrir la surprise du jour.</p>
-                <span class="card__price">À partir de 7,90 €</span>
-              </div>
-            </div>
-            <span class="card__hint" aria-hidden="true">Cliquer pour en savoir plus</span>
-          </article>
-
-        </div>
-
-        <div class="offre__footer">
-          <a href="#" class="link-underline">Télécharger la carte complète (PDF) →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         SECTION 3 — AMBIANCE / VALEURS
-    ═══════════════════════════════════════ -->
-    <section class="histoire" id="histoire" aria-labelledby="histoire-title">
-      <div class="container histoire__inner">
-
-        <div class="histoire__text">
-          <h2 class="section-title section-title--light" id="histoire-title">Un lieu, une histoire</h2>
-          <p class="histoire__body">
-            Grão a ouvert ses portes en 2019 dans une ancienne imprimerie de la Croix-Rousse. Mia et Théo, ses fondateurs, ont sillonné l'Éthiopie et le Brésil pour sélectionner leurs grains directement auprès des producteurs. Ici, chaque tasse raconte un voyage.
-          </p>
-
-          <ul class="valeurs" role="list">
-            <li class="valeur">
-              <span class="valeur__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
-              </span>
-              <div>
-                <strong class="valeur__title">Traçabilité</strong>
-                <p class="valeur__desc">Chaque grain est sourcé directement auprès des producteurs.</p>
-              </div>
-            </li>
-            <li class="valeur">
-              <span class="valeur__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-              </span>
-              <div>
-                <strong class="valeur__title">Torréfaction artisanale</strong>
-                <p class="valeur__desc">Torréfiés à Lyon dans notre atelier, chaque semaine.</p>
-              </div>
-            </li>
-            <li class="valeur">
-              <span class="valeur__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </span>
-              <div>
-                <strong class="valeur__title">Communauté</strong>
-                <p class="valeur__desc">Un café de quartier, ancré dans la vie de la Croix-Rousse.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="histoire__visual">
-          <img src="assets/images/ambiance.png" alt="Intérieur chaleureux du coffee shop Grão, lumière dorée et tables en bois" loading="lazy" class="histoire__img" />
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         SECTION 4 — AVIS CLIENTS
-    ═══════════════════════════════════════ -->
-    <section class="avis" id="avis" aria-labelledby="avis-title">
-      <div class="container">
-        <h2 class="section-title" id="avis-title">Ce qu'ils disent de nous</h2>
-
-        <div class="cards-grid">
-
-          <article class="avis-card" aria-label="Avis de Sophie M.">
-            <div class="avis-card__header">
-              <div class="avis-card__avatar" aria-hidden="true">S</div>
-              <div>
-                <strong class="avis-card__name">Sophie M.</strong>
-                <div class="avis-card__stars" aria-label="5 étoiles sur 5">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-            <p class="avis-card__text">"Le meilleur café filtre que j'ai bu à Lyon. L'ambiance est chaleureuse et le personnel passionné. Je reviens chaque semaine sans faute."</p>
-          </article>
-
-          <article class="avis-card" aria-label="Avis de Thomas R.">
-            <div class="avis-card__header">
-              <div class="avis-card__avatar" aria-hidden="true">T</div>
-              <div>
-                <strong class="avis-card__name">Thomas R.</strong>
-                <div class="avis-card__stars" aria-label="5 étoiles sur 5">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-            <p class="avis-card__text">"Un endroit unique où chaque tasse est une découverte. J'ai adoré apprendre l'origine des grains. La formule petit-déjeuner est incroyable."</p>
-          </article>
-
-          <article class="avis-card" aria-label="Avis de Amina K.">
-            <div class="avis-card__header">
-              <div class="avis-card__avatar" aria-hidden="true">A</div>
-              <div>
-                <strong class="avis-card__name">Amina K.</strong>
-                <div class="avis-card__stars" aria-label="5 étoiles sur 5">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-            <p class="avis-card__text">"Grão c'est mon bureau du matin. Wifi, bonne musique, café d'exception. L'équipe est aux petits soins. Je recommande les yeux fermés !"</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         SECTION 5 — CTA SECONDAIRE
-    ═══════════════════════════════════════ -->
-    <section class="visiter" id="visiter" aria-labelledby="visiter-title">
-      <div class="container visiter__inner">
-
-        <div class="visiter__info">
-          <h2 class="section-title section-title--light" id="visiter-title">Venez nous rendre visite</h2>
-          <address class="visiter__address">
-            <p>12 rue Terme<br>69001 Lyon — Croix-Rousse</p>
-            <p class="visiter__horaires">
-              <strong>Lun – Ven :</strong> 7h30 – 18h00<br>
-              <strong>Sam – Dim :</strong> 8h30 – 17h00
-            </p>
-          </address>
-          <a href="mailto:bonjour@grao-coffee.fr" class="btn btn--primary">Réserver une table</a>
-        </div>
-
-        <div class="newsletter">
-          <h3 class="newsletter__title">Restez dans la boucle</h3>
-          <p class="newsletter__desc">Nouvelles origines, événements, ateliers de dégustation — soyez les premiers informés.</p>
-          <form class="newsletter__form" action="#" method="post" aria-label="Formulaire newsletter">
-            <label for="email" class="sr-only">Votre adresse e-mail</label>
-            <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email" />
-            <button type="submit" class="btn btn--primary">S'inscrire</button>
-          </form>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
-  <footer class="footer" role="contentinfo">
-    <div class="container footer__inner">
-
-      <div class="footer__brand">
-        <span class="footer__logo">Grão</span>
-        <p class="footer__baseline">Le café, à la source.</p>
-      </div>
-
-      <nav class="footer__nav" aria-label="Navigation footer">
-        <ul role="list">
+    <header role="banner">
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#" class="nav__logo" aria-label="Grão, retour à l'accueil"
+          >Grão</a
+        >
+        <ul class="nav__links" role="list">
           <li><a href="#carte">La carte</a></li>
           <li><a href="#histoire">Notre histoire</a></li>
           <li><a href="#avis">Avis</a></li>
-          <li><a href="#visiter">Nous trouver</a></li>
+          <li><a href="#visiter" class="nav__cta">Réserver</a></li>
         </ul>
+        <button
+          class="nav__burger"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </nav>
+    </header>
 
-      <div class="footer__social">
-        <p class="footer__social-label">Suivez-nous</p>
-        <ul class="footer__social-links" role="list">
-          <li>
-            <a href="#" aria-label="Instagram de Grão" rel="noopener noreferrer">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Facebook de Grão" rel="noopener noreferrer">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="TikTok de Grão" rel="noopener noreferrer">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-              TikTok
-            </a>
-          </li>
-        </ul>
+    <main>
+      <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            Le café,<br />à la source.
+          </h1>
+          <p class="hero__tagline">
+            Grains sélectionnés à la main, torréfiés à Lyon.
+          </p>
+          <p class="hero__description">
+            Grão est un café de spécialité indépendant situé dans le quartier de
+            la Croix-Rousse à Lyon. Grains sourcés directement auprès des
+            producteurs, torréfiés sur place chaque semaine.
+          </p>
+          <div class="hero__actions">
+            <a href="#carte" class="btn btn--primary">Découvrir la carte</a>
+            <a href="#histoire" class="btn btn--ghost">Notre histoire</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         SECTION 2 — CARTE / OFFRE
+    ═══════════════════════════════════════ -->
+      <section class="offre" id="carte" aria-labelledby="offre-title">
+        <div class="container">
+          <h2 class="section-title" id="offre-title">Ce qu'on vous prépare</h2>
+          <p class="section-subtitle">
+            Des recettes pensées autour de la qualité du grain.
+          </p>
+
+          <div class="cards-grid">
+            <article
+              class="card"
+              aria-label="Espresso et déclinaisons"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <div class="card__inner">
+                <div class="card__front">
+                  <div class="card__img-wrap">
+                    <img
+                      src="assets/images/card-espresso.png"
+                      alt="Tasse d'espresso Grão"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">Espresso &amp; Déclinaisons</h3>
+                    <p class="card__desc">
+                      Notre espresso signature issu d'un blend
+                      éthiopien-brésilien. Servi court, allongé ou en latte
+                      onctueux.
+                    </p>
+                    <span class="card__price">À partir de 2,50 €</span>
+                  </div>
+                </div>
+                <div class="card__back" aria-hidden="true">
+                  <h3 class="card__back-title">Espresso &amp; Déclinaisons</h3>
+                  <p>
+                    Notre blend marie des arabicas d'Éthiopie (notes florales,
+                    agrumes) et du Brésil (corps rond, chocolaté). Déclinable en
+                    macchiato, cortado, flat white ou latte — chaque préparation
+                    révèle une facette du grain.
+                  </p>
+                  <p>
+                    Préparé sur machine La Marzocco par nos baristas formés à la
+                    torréfaction.
+                  </p>
+                  <span class="card__price">À partir de 2,50 €</span>
+                </div>
+              </div>
+              <span class="card__hint" aria-hidden="true"
+                >Cliquer pour en savoir plus</span
+              >
+            </article>
+
+            <article
+              class="card"
+              aria-label="Cafés filtre et origines"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <div class="card__inner">
+                <div class="card__front">
+                  <div class="card__img-wrap">
+                    <img
+                      src="assets/images/card-flatwhite.png"
+                      alt="Flat white avec latte art"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">Cafés filtre &amp; Origins</h3>
+                    <p class="card__desc">
+                      Chaque semaine, une origine différente mise en avant. V60,
+                      Chemex ou Aeropress — le grain s'exprime pleinement.
+                    </p>
+                    <span class="card__price">À partir de 3,50 €</span>
+                  </div>
+                </div>
+                <div class="card__back" aria-hidden="true">
+                  <h3 class="card__back-title">Cafés filtre &amp; Origins</h3>
+                  <p>
+                    Chaque lundi, une nouvelle origine prend sa place sur notre
+                    bar : Kenya, Colombie, Yirgacheffe, Sidama... Choisissez
+                    votre méthode — V60 pour la clarté, Chemex pour la
+                    délicatesse, Aeropress pour l'intensité.
+                  </p>
+                  <p>
+                    Un café filtre, c'est le grain dans toute sa vérité. Sourcé,
+                    traçé, raconté.
+                  </p>
+                  <span class="card__price">À partir de 3,50 €</span>
+                </div>
+              </div>
+              <span class="card__hint" aria-hidden="true"
+                >Cliquer pour en savoir plus</span
+              >
+            </article>
+
+            <article
+              class="card"
+              aria-label="Formules et accompagnements"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <div class="card__inner">
+                <div class="card__front">
+                  <div class="card__img-wrap">
+                    <img
+                      src="assets/images/card-coldbrew.png"
+                      alt="Cold brew en verre"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">Formules</h3>
+                    <p class="card__desc">
+                      Café + viennoiserie maison ou café + plat du jour. Nos
+                      formules sont renouvelées chaque matin selon l'arrivage.
+                    </p>
+                    <span class="card__price">À partir de 7,90 €</span>
+                  </div>
+                </div>
+                <div class="card__back" aria-hidden="true">
+                  <h3 class="card__back-title">
+                    Formules &amp; Accompagnements
+                  </h3>
+                  <p>
+                    Le matin : croissant au beurre, pain au chocolat ou tartine
+                    de saison. Le midi : plat chaud du jour + café au choix.
+                    Tout est préparé en cuisine sur place, sans compromis sur la
+                    qualité.
+                  </p>
+                  <p>
+                    Les formules changent chaque matin selon l'arrivage — venez
+                    découvrir la surprise du jour.
+                  </p>
+                  <span class="card__price">À partir de 7,90 €</span>
+                </div>
+              </div>
+              <span class="card__hint" aria-hidden="true"
+                >Cliquer pour en savoir plus</span
+              >
+            </article>
+          </div>
+
+          <div class="offre__footer">
+            <a href="#" class="link-underline"
+              >Télécharger la carte complète (PDF) →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         SECTION 3 — AMBIANCE / VALEURS
+    ═══════════════════════════════════════ -->
+      <section class="histoire" id="histoire" aria-labelledby="histoire-title">
+        <div class="container histoire__inner">
+          <div class="histoire__text">
+            <h2 class="section-title section-title--light" id="histoire-title">
+              Un lieu, une histoire
+            </h2>
+            <p class="histoire__body">
+              Grão a ouvert ses portes en 2019 dans une ancienne imprimerie de
+              la Croix-Rousse. Mia et Théo, ses fondateurs, ont sillonné
+              l'Éthiopie et le Brésil pour sélectionner leurs grains directement
+              auprès des producteurs. Ici, chaque tasse raconte un voyage.
+            </p>
+
+            <ul class="valeurs" role="list">
+              <li class="valeur">
+                <span class="valeur__icon" aria-hidden="true">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                    />
+                    <path d="M12 6v6l4 2" />
+                  </svg>
+                </span>
+                <div>
+                  <strong class="valeur__title">Traçabilité</strong>
+                  <p class="valeur__desc">
+                    Chaque grain est sourcé directement auprès des producteurs.
+                  </p>
+                </div>
+              </li>
+              <li class="valeur">
+                <span class="valeur__icon" aria-hidden="true">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                    <line x1="6" y1="1" x2="6" y2="4" />
+                    <line x1="10" y1="1" x2="10" y2="4" />
+                    <line x1="14" y1="1" x2="14" y2="4" />
+                  </svg>
+                </span>
+                <div>
+                  <strong class="valeur__title">Torréfaction artisanale</strong>
+                  <p class="valeur__desc">
+                    Torréfiés à Lyon dans notre atelier, chaque semaine.
+                  </p>
+                </div>
+              </li>
+              <li class="valeur">
+                <span class="valeur__icon" aria-hidden="true">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    />
+                  </svg>
+                </span>
+                <div>
+                  <strong class="valeur__title">Communauté</strong>
+                  <p class="valeur__desc">
+                    Un café de quartier, ancré dans la vie de la Croix-Rousse.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="histoire__visual">
+            <img
+              src="assets/images/ambiance.png"
+              alt="Intérieur chaleureux du coffee shop Grão, lumière dorée et tables en bois"
+              loading="lazy"
+              class="histoire__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         SECTION 4 — AVIS CLIENTS
+    ═══════════════════════════════════════ -->
+      <section class="avis" id="avis" aria-labelledby="avis-title">
+        <div class="container">
+          <h2 class="section-title" id="avis-title">
+            Ce qu'ils disent de nous
+          </h2>
+
+          <div class="cards-grid">
+            <article class="avis-card" aria-label="Avis de Sophie M.">
+              <div class="avis-card__header">
+                <div class="avis-card__avatar" aria-hidden="true">S</div>
+                <div>
+                  <strong class="avis-card__name">Sophie M.</strong>
+                  <div class="avis-card__stars" aria-label="5 étoiles sur 5">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="avis-card__text">
+                "Le meilleur café filtre que j'ai bu à Lyon. L'ambiance est
+                chaleureuse et le personnel passionné. Je reviens chaque semaine
+                sans faute."
+              </p>
+            </article>
+
+            <article class="avis-card" aria-label="Avis de Thomas R.">
+              <div class="avis-card__header">
+                <div class="avis-card__avatar" aria-hidden="true">T</div>
+                <div>
+                  <strong class="avis-card__name">Thomas R.</strong>
+                  <div class="avis-card__stars" aria-label="5 étoiles sur 5">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="avis-card__text">
+                "Un endroit unique où chaque tasse est une découverte. J'ai
+                adoré apprendre l'origine des grains. La formule petit-déjeuner
+                est incroyable."
+              </p>
+            </article>
+
+            <article class="avis-card" aria-label="Avis de Amina K.">
+              <div class="avis-card__header">
+                <div class="avis-card__avatar" aria-hidden="true">A</div>
+                <div>
+                  <strong class="avis-card__name">Amina K.</strong>
+                  <div class="avis-card__stars" aria-label="5 étoiles sur 5">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="avis-card__text">
+                "Grão c'est mon bureau du matin. Wifi, bonne musique, café
+                d'exception. L'équipe est aux petits soins. Je recommande les
+                yeux fermés !"
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+         SECTION 5 — CTA SECONDAIRE
+    ═══════════════════════════════════════ -->
+      <section class="visiter" id="visiter" aria-labelledby="visiter-title">
+        <div class="container visiter__inner">
+          <div class="visiter__info">
+            <h2 class="section-title section-title--light" id="visiter-title">
+              Venez nous rendre visite
+            </h2>
+            <address class="visiter__address">
+              <p>12 rue Terme<br />69001 Lyon — Croix-Rousse</p>
+              <p class="visiter__horaires">
+                <strong>Lun – Ven :</strong> 7h30 – 18h00<br />
+                <strong>Sam – Dim :</strong> 8h30 – 17h00
+              </p>
+            </address>
+            <a href="mailto:bonjour@grao-coffee.fr" class="btn btn--primary"
+              >Réserver une table</a
+            >
+          </div>
+
+          <div class="newsletter">
+            <h3 class="newsletter__title">Restez dans la boucle</h3>
+            <p class="newsletter__desc">
+              Nouvelles origines, événements, ateliers de dégustation — soyez
+              les premiers informés.
+            </p>
+            <form
+              class="newsletter__form"
+              action="#"
+              method="post"
+              aria-label="Formulaire newsletter"
+            >
+              <label for="email" class="sr-only">Votre adresse e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="votre@email.com"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" class="btn btn--primary">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">Grão</span>
+          <p class="footer__baseline">Le café, à la source.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Navigation footer">
+          <ul role="list">
+            <li><a href="#carte">La carte</a></li>
+            <li><a href="#histoire">Notre histoire</a></li>
+            <li><a href="#avis">Avis</a></li>
+            <li><a href="#visiter">Nous trouver</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social">
+          <p class="footer__social-label">Suivez-nous</p>
+          <ul class="footer__social-links" role="list">
+            <li>
+              <a
+                href="#"
+                aria-label="Instagram de Grão"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Facebook de Grão"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="TikTok de Grão" rel="noopener noreferrer">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+                TikTok
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-    </div>
+      <div class="footer__bottom">
+        <p>© 2025 Grão Coffee Shop — 12 rue Terme, 69001 Lyon</p>
+        <nav class="footer__legal" aria-label="Liens légaux">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <span aria-hidden="true">·</span>
+          <a href="cgv.html">CGV</a>
+          <span aria-hidden="true">·</span>
+          <a href="cgu.html">CGU</a>
+        </nav>
+      </div>
+    </footer>
 
-    <div class="footer__bottom">
-      <p>© 2025 Grão Coffee Shop — 12 rue Terme, 69001 Lyon</p>
-      <nav class="footer__legal" aria-label="Liens légaux">
-        <a href="mentions-legales.html">Mentions légales</a>
-        <span aria-hidden="true">·</span>
-        <a href="cgv.html">CGV</a>
-        <span aria-hidden="true">·</span>
-        <a href="cgu.html">CGU</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

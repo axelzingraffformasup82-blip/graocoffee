@@ -288,7 +288,7 @@ address { font-style: normal; }
   border-radius: var(--radius);
   perspective: 1000px;
   cursor: pointer;
-  min-height: 420px;
+  height: 420px;
   position: relative;
 }
 .card:hover:not(.is-flipped) { transform: translateY(-4px); }
