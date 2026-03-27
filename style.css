@@ -286,7 +286,6 @@ address { font-style: normal; }
 /* Cards produit */
 .card {
   border-radius: var(--radius);
-  perspective: 1000px;
   cursor: pointer;
   height: 420px;
   position: relative;
@@ -301,8 +300,9 @@ address { font-style: normal; }
   transition: transform 0.55s cubic-bezier(0.45, 0, 0.55, 1);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
+  transform: perspective(1000px) rotateY(0deg);
 }
-.card.is-flipped .card__inner { transform: rotateY(180deg); }
+.card.is-flipped .card__inner { transform: perspective(1000px) rotateY(180deg); }
 .card.is-flipped { box-shadow: none; }
 
 .card__front,
@@ -353,8 +353,11 @@ address { font-style: normal; }
 
 .card__title {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--color-primary);
 }
 
@@ -773,11 +776,6 @@ address { font-style: normal; }
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cards-grid > *:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    max-width: 420px;
-    margin-inline: auto;
-  }
 
   .histoire__inner,
   .visiter__inner {
@@ -818,10 +816,6 @@ address { font-style: normal; }
   /* Cards en colonne */
   .cards-grid {
     grid-template-columns: 1fr;
-  }
-  .cards-grid > *:last-child:nth-child(odd) {
-    max-width: 100%;
-    grid-column: auto;
   }
 
   /* Newsletter form empilé */
